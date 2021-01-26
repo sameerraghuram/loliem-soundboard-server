@@ -3,6 +3,7 @@
 *.pot
 *.pyc
 __pycache__/
+soundboardserver/__pycache__/settings.cpython-36.pyc
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
@@ -16,6 +17,8 @@ media
 # Byte-compiled / optimized / DLL files
 *.py[cod]
 *$py.class
+
+.idea/*
 
 # C extensions
 *.so
