@@ -41,6 +41,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
     'soundboardserver',
     'soundboardserver.accounts',
+    'soundboardserver.clips',
     
     'django.contrib.admin',
     'django.contrib.auth',
