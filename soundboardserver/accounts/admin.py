@@ -1,7 +1,12 @@
 from django.contrib import admin
-from django.contrib.auth.admin import UserAdmin
 
-from soundboardserver.accounts.models import User
+from soundboardserver.accounts.models import User, UserClip
 
-# Register your models here.
-admin.site.register(User, UserAdmin)
+
+class AudioClipInline(admin.TabularInline):
+    model = UserClip
+
+
+@admin.register(User)
+class UserAdmin(admin.ModelAdmin):
+    inlines = [AudioClipInline]
